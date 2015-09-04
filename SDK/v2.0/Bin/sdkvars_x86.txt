@@ -1,0 +1,4 @@
+@Set VCBUILD_DEFAULT_CFG=Debug^|Win32
+@Set VCBUILD_DEFAULT_OPTIONS=/useenv
+@echo Setting environment to use Microsoft .NET Framework v2.0 SDK tools.
+@echo For a list of SDK tools, see the 'StartTools.htm' file in the bin folder.

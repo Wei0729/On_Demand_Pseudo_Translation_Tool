@@ -1,0 +1,304 @@
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+	<title>Microsoft .NET Framework Tools</title>
+    <style>
+        a:hover { color:#ff0000; }
+    </style>
+</head>
+<body topmargin="0" leftmargin="0">
+<!-- Start Toolbar-->
+<DIV ID="TBDownLevelDiv">
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0 BORDER=0 BGCOLOR='#ffffff'>
+<TR>
+	<TD VALIGN=top HEIGHT=60 WIDTH=250 ROWSPAN=2><IMG height=59 alt=".NET Framework SDK" src="../docs/complus.gif" width=230 border=0></TD>
+	<TD VALIGN=top HEIGHT=20 ALIGN=right><IMG height=20 src="../docs/curve.gif" alt="curve.gif" width=18 border=0></TD>
+	<TD BGCOLOR=#000000 HEIGHT=20 VALIGN=center ALIGN=right NOWRAP COLSPAN=2>
+		<FONT COLOR='#ffffff' FACE="Verdana, Arial" SIZE=1>
+		<B>
+			&nbsp;&nbsp;<A style="COLOR: #ffffff; TEXT-DECORATION: none" target  =_top href="http://support.microsoft.com"><FONT COLOR='#ffffff'>Links to the Web: &nbsp; &nbsp; Support</FONT></A>&nbsp;&nbsp;<FONT COLOR='#ffffff'>|</FONT>
+			&nbsp;&nbsp;<A style="COLOR: #ffffff; TEXT-DECORATION: none" target  =_top href="http://search.microsoft.com/"><FONT COLOR='#ffffff'>Search</FONT></A>&nbsp;&nbsp;<FONT COLOR='#ffffff'>|</FONT>
+			&nbsp;&nbsp;<A style="COLOR: #ffffff; TEXT-DECORATION: none" target  =_top href="http://www.microsoft.com/"><FONT COLOR='#ffffff'>microsoft.com Guide</FONT></A>&nbsp;&nbsp;
+		</B>
+		</FONT>
+	</TD>
+</TR>
+<TR>
+	<TD VALIGN=top HEIGHT=40 WIDTH=19>&nbsp;</TD>
+	<TD VALIGN=top HEIGHT=40 ALIGN=right NOWRAP COLSPAN=2>
+	<A HREF="http://www.microsoft.com/" TARGET="_top"><IMG height=40 src="../docs/mslogo.gif" width=112 border=0 alt="www.microsoft.com"></A></TD>
+</TR>
+<TR><!-- Start: Local menus -->
+	<TD BGCOLOR="#336699" HEIGHT=20 VALIGN=center NOWRAP COLSPAN=4>
+
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR>
+<TD BGCOLOR="#336699" nowrap>
+	<FONT COLOR='#ffffff' FACE="Verdana, Arial" SIZE=1>
+		<B>&nbsp;&nbsp;
+	<FONT COLOR='#ffffff'>
+		Related Links: &nbsp; &nbsp; 
+		<A style="FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none" target=_top href="http://msdn.microsoft.com/">
+			MSDN Online
+	</FONT>
+		</A>
+		&nbsp;&nbsp;</B>
+	</FONT>
+</TD>
+<TD>
+	<FONT COLOR='#ffffff' FACE="Verdana, Arial" SIZE=1>
+		<B>|</B>
+	</FONT>
+</TD>
+
+<TD BGCOLOR="#336699" nowrap>
+	<FONT COLOR='#ffffff' FACE="Verdana, Arial" SIZE=1>
+		<B>&nbsp;&nbsp;
+	<FONT COLOR='#ffffff'>
+		<A style="FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none" target=_top href="http://msdn.microsoft.com/net/">
+			MSDN Online .NET page
+	</FONT>
+		</A>
+		&nbsp;&nbsp;</B>
+	</FONT>
+</TD>
+
+<TD>
+	<FONT COLOR='#ffffff' FACE="Verdana, Arial" SIZE=1>
+		<B>|</B>
+	</FONT>
+</TD>
+<TD BGCOLOR="#336699" nowrap>
+	<FONT COLOR='#fffff' FACE="Verdana, Arial" SIZE=1>
+		<B>&nbsp;&nbsp;
+		<A style="FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none" target=_top href="http://msdn.microsoft.com/vstudio">
+	<FONT COLOR='#ffffff'>
+		Visual Studio  
+	</FONT>
+		</A>
+		&nbsp;&nbsp;</B>
+	</FONT>
+</TD>
+<TD>
+	<FONT COLOR='#ffffff' FACE="Verdana, Arial" SIZE=1>
+		<B>|</B>
+	</FONT>
+</TD>
+</TR>
+</TABLE>
+
+</TD><!-- End: Local menus -->
+</TR>
+</TABLE>
+</DIV><!-- End Toolbar-->
+<div style="MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px; FONT: normal x-small; FONT-FAMILY: Verdana, Arial, Helvetica;">
+<p>
+<span style="FONT: bold medium; FONT-FAMILY: Verdana, Arial, Helvetica;" align="left">Microsoft .NET Framework Tools</span>
+<p>
+The Microsoft .NET Framework SDK tools are designed to make it easier for you to create, deploy, and manage applications and components that target the common language runtime. 
+You can run all  the tools from the command line with the exception of the Assembly Cache Viewer (Shfusion.dll) and the Microsoft CLR Debugger (DbgCLR.exe). You must access the Assembly Cache Viewer (Shfusion.dll) from Windows Explorer. For information on each of the tools, 
+see the <i>.NET Framework Tools</i> section in the .NET Framework SDK documentation.
+<p>
+Unless otherwise noted, the tools are located in the SDK's \bin directory.
+<p>
+    Note: For the .Net Framework tools to function properly, the Path, Include, and Lib environment variables must be set correctly. 
+    Set the Path, Include and Lib environment variables by running SDKVars.bat, located in the <i>&lt;SDK&gt;\v2.0\Bin</i> directory. 
+    SDKVars.bat must be executed in every command shell.
+<p>
+
+	<li><A href="#ConfigDeploy">Configuration and Deployment Tools</A>
+	<li><A href="#Debug">Debugging Tools</A>
+	<li><A href="#Security">Security Tools</A>
+	<li><A href="#General">General Tools</A>
+<p>
+
+<span style="FONT: bold small; FONT-FAMILY: Verdana, Arial, Helvetica;" align="left"><a name="ConfigDeploy">Configuration and Deployment Tools</A></span> 
+<p>
+<ul>
+	<li><b>ASP.NET IIS Registration Tool (Aspnet_regiis.exe)</b><br>
+	Allows an administrator or installation program to update the scriptmaps for an ASP.NET application to point to the ASP.NET ISAPI 	version associated with the tool. You can also use the tool to perform other ASP.NET configuration operations.
+
+	<p>
+	Note: Aspnet_regiis.exe can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+<p>
+	<li><b>Assembly Cache Viewer (Shfusion.dll)</b><br>
+	Allows you to view and manipulate the contents of the global assembly cache by using Windows Explorer.
+<p>
+Note: Shfusion.dll can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+
+	<p>
+	
+	<li><b>Assembly Linker (Al.exe)</b><br>
+	Generates a file with an assembly manifest from one or more files that are either resource files or Microsoft intermediate language (MSIL) files.   
+	<p>
+	Note: Al.exe can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+<p>
+	<li><b>Assembly Registration Tool (Regasm.exe)</b><br>
+	Reads the metadata within an assembly and adds the necessary entries to the registry, which allows COM clients to create .NET Framework classes transparently.
+<p>
+Note: Regasm.exe can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+
+	<p>
+	<li><b>Assembly Binding Log Viewer (Fuslogvw.exe)</b><br>
+	Displays details for failed assembly binds. This information helps you diagnose why the .NET Framework cannot locate an assembly at runtime. 
+	<p>
+	
+	<li><b>Global Assembly Cache Tool (Gacutil.exe)</b><br>
+	Allows you to view and manipulate the contents of the global assembly cache and download cache. While Shfusion.dll provides similar functionality, you can use Gacutil.exe from build scripts, makefile files, and batch files.  
+	<p>
+	
+	<li><b>Installer Tool (Installutil.exe)</b><br>
+	Allows you to install and uninstall server resources by executing the installer components of a specified assembly.
+<p>
+Note: Installutil.exe can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+
+	<p>
+	
+	<li><b>Manifest Tool (Mt.exe)</b><br>
+	Allows you to generate and merge unmanaged winSxS component manifests, and managed assembly manifests.
+	<p>
+	<li><b>Isolated Storage Tool (Storeadm.exe)</b><br>
+	Lists or removes all existing stores for the currently logged-on user. 
+	<p>
+	
+	<li><b>Native Image Generator Tool (Ngen.exe)</b><br>
+	Creates a native image from a managed assembly and installs it into the native image cache on the local 
+    computer.
+<p>
+Note: Ngen.exe can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+<p>
+
+<li><b>.NET Framework Configuration Tool (Mscorcfg.msc)</b><br>
+	Provides a graphical interface for managing .NET Framework security policy and applications that use remoting services. This tool also allows you to manage and configure assemblies in the global assembly cache.
+	<p>
+	Note: Mscorcfg.msc can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+	<p>
+
+	<li><b>.NET Services Installation Tool (Regsvcs.exe)</b><br>
+	Adds managed classes to Windows 2000 Component Services by loading and registering the assembly and generating, registering, and installing the type library into an existing COM+ 1.0 application.
+<p>
+Note: Regsvcs.exe can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+
+	<p>
+	
+	<li><b>Soapsuds Tool (Soapsuds.exe)</b><br></li>
+	Helps you compile client applications that communicate with XML Web services by using a technique called remoting.   
+	<p>
+	
+	<li><b>Type Library Exporter (Tlbexp.exe)</b><br>
+	Generates a type library from a common language runtime assembly. 
+	<p>
+	
+	<li><b>Type Library Importer (Tlbimp.exe)</b><br>
+	Converts the type definitions found within a COM type library into equivalent definitions in managed metadata format.
+	<p>
+	
+	<li><b>Web Services Description Language Tool (Wsdl.exe)</b><br>
+	Generates code for XML Web services and XML Web services clients from Web Services Description Language (WSDL) contract files, XML Schema Definition (XSD) schema files, and .discomap discovery documents.
+	<p>
+	
+	<li><b>Web Services Discovery Tool (Disco.exe)</b><br>
+	Discovers the URLs of XML Web services located on a Web server, and saves documents related to 
+    each XML Web service on a local disk.
+	<p>
+	
+	<li><b>XML Schema Definition Tool (Xsd.exe)</b><br>
+	Generates XML schemas that follow the XML Schema Definition (XSD) language proposed by the World Wide Web Consortium (W3C). This tool generates common language runtime classes and DataSet classes from an XSD schema file.
+	<p>
+
+	<li><b>XML Serialization Pre-generation Tool (Sgen.exe)</b><br>
+	Generates serialization assemblies for use with XmlSerializer. The utility allows developers to pre-generate assemblies for serialization and deploying the assemblies with the application.
+	<p>
+</ul>
+<span style="FONT: bold small; FONT-FAMILY: Verdana, Arial, Helvetica;" align="left"><a name="Debug">Debugger Tools</A></span> 
+<p>
+<ul>
+<li><b>Microsoft CLR Debugger (DbgCLR.exe)</b><br>
+	Provides debugging services with a graphical interface to help application developers find and fix bugs in programs that target the runtime. For more information, see <i>The CLR Debugger</i> topic in the .NET Framework SDK documentation.
+<p>
+	<b>Note</b>: The Microsoft CLR Debugger&nbsp;(DbgCLR.exe) is located in the SDK\v2.0\GuiDebug folder.
+	<p>
+<li><b>Managed Code Debugger (Mdbg.exe)</b><br>
+	Provides command-line debugging services to help application developers find and fix bugs in programs written using the .NET Framework. Use this tool to find and fix bugs in programs that target the runtime.
+	<p>
+
+<li><b>Runtime Debugger (Cordbg.exe)</b><br>
+	Provides command-line debugging services using the common language runtime Debug API. Use this tool to find and fix bugs in programs that target the runtime.
+	<p>
+</ul> 
+
+<span style="FONT: bold small; FONT-FAMILY: Verdana, Arial, Helvetica;" align="left"><a name="Security">Security Tools</a></span> 
+<p>
+<ul>
+	<li><b>Certificate Creation Tool (Makecert.exe)</b><br>
+	Generates  X.509 certificates for testing purposes only.
+	<p>
+	
+	<li><b>Certificate Manager Tool (Certmgr.exe)</b><br>
+	Manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
+	<p>
+	
+	<li><b>Code Access Security Policy Tool (Caspol.exe)</b><br>
+	Allows you to examine and modify machine, user, and enterprise-level code access security policies.    
+	<p>
+	Note: Caspol.exe can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+	<p>
+	<li><b>PEVerify Tool (PEverify.exe)</b><br>
+	Performs MSIL type safety verification checks and metadata validation checks on a specified assembly.
+	<p>
+	
+	<li><b>Secutil Tool (Secutil.exe)</b><br>
+	Extracts strong name public key information or Authenticode publisher certificates from an assembly, in a format that can be incorporated into code.</span>    
+	<p>
+	
+	<li><b>Software Publisher Certificate Test Tool (Cert2spc.exe)</b><br>
+	Creates, for test purposes only, a Software Publisher's Certificate (SPC) from one or more X.509 certificates.
+	<p>
+	
+	<li><b>Strong Name Tool (Sn.exe)</b><br>
+	Helps create assemblies with strong names. Sn.exe provides options for key management, signature generation, and signature verification.
+	<p>
+</ul>
+<span style="FONT: bold small; FONT-FAMILY: Verdana, Arial, Helvetica;" align="left"><a name= "General">General Tools</a></span> 
+<p>
+<ul>
+	<li><b>License Compiler (Lc.exe)</b><br>
+	Reads text files that contain licensing information and produces a .licenses file that can be embedded in a common language runtime executable.
+	<p>
+	<li><b>Management Strongly Typed Class Generator (Mgmtclassgen.exe)</b><br>
+	Allows you to quickly generate an early bound class in C#, Visual Basic, or JScript for a specified Windows Management Instrumentation (WMI) class.
+	<p>
+	
+	<li><b>MSIL Assembler (Ilasm.exe)</b><br>
+	Generates a PE file from Microsoft intermediate language (MSIL). You can run the resulting executable, which contains MSIL code and the required metadata, to determine whether the MSIL code performs as expected.  
+	<p>
+	Note: Ilasm.exe can be found in "%windir%\Microsoft.NET\Framework\v2.0.xxxx" where xxxx is the build number of the .NET Framework you are using.
+<p>
+	
+	<li><b>MSIL Disassembler (Ildasm.exe)</b><br>
+	Takes a PE file that contains MSIL code and creates a text file suitable as input to the MSIL Assembler (Ilasm.exe).
+	<p>
+	<li><b>Resource File Generator Tool (Resgen.exe)</b><br>
+	Converts text files and .resx (XML-based resource format) files to .NET common language runtime binary .resources files that can be embedded in a runtime binary executable or compiled into satellite assemblies.   
+	<p>
+	<li><b>Visual J# Binary Converter Tool (JbImp.exe) </b><br>
+It converts certain Java-language bytecode (.class) files to Microsoft® intermediate language (MSIL). This tool enables developers to convert most JDK 1.1.4–level libraries and applications available only as bytecode files to MSIL assemblies and run them on the .NET Framework with the Visual J# Redistributable Package. Use this tool only if the Java-language sources for the applications or libraries are not available. If Java-language sources are available, it is recommended that you use the Visual J# compiler (vjc.exe) instead.
+	<p>
+Note:   To use this tool, the Visual J# Redistributable Package 2.0 must be installed. <a href=..\redist.htm>Installing the Visual J# Redistributable Package 2.0.</a> 
+	<p>
+
+	<li><b>Windows Forms ActiveX Control Importer (Aximp.exe)</b><br>
+	Converts type definitions in a COM type library for an ActiveX control into a Windows Forms control.
+	<p>
+	<li><b>Windows Resource Localization Editor (Winres.exe)</b><br>
+	Allows you to quickly and easily localize Windows Forms forms.
+	<p>
+<p>
+<HR>
+<span style="FONT: normal 8pt; FONT-FAMILY: Verdana, Arial, Helvetica">Copyright © 2005 Microsoft Corporation. All rights reserved.
+</span>
+<br><P>
+</div>
+</body>
+</html>

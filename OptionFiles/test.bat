@@ -1,0 +1,1 @@
+/newproject:C:\ArcGIS\ArcGIS11.lpu /addlang:"ar" /addlang:"de" /addsource:C:\ArcGIS\ArcGIS.Desktop.Core.dll "parser:AddIn:.NET Parser" /update "/options:Pseudo_ar.pslopt" /simulate lang:ar "/options:Pseudo_de.pslopt" /simulate lang:de
